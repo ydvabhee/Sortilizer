@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <style>
+   .logoAnimation
+   {
+       width: 0.5em;
+       height: 2em;
+       border: 1px saddlebrown solid;
+       overflow: hidden;
+   }
+
+   .logoAnimation div
+   {
+       
+       height: 0.2em;
+       width: 10px;
+       border: 0px solid;
+       margin: 2px;;
+       background-color: slateblue;
+       position: relative;
+     
+   }
+    .div1{  animation: zigZag1 1s infinite alternate ; }
+    .div2{  animation: zigZag2 1s infinite alternate ;   }
+    .div3{  animation: zigZag3 1.2s infinite alternate ;   }
+    .div4{  animation: zigZag4 1.1s infinite alternate ;   }
+   
+
+
+   @keyframes zigZag1 { from { margin-left: 30%;} to { margin-left: 60%; }} 
+   @keyframes zigZag2 { from { margin-left: 80%;} to { margin-left: 0%; }} 
+   @keyframes zigZag3 { from { margin-left: 70%; }to{ margin-left: 10%; }}
+   @keyframes zigZag4 { from { margin-left:-10%; }to{ margin-left: 80%; }}
+ 
+
+       
+   }
+
+   </style>
+
+   <div class="logoAnimation">
+       <div class="div1"></div>
+       <div class="div2"></div>
+       <div class="div3"></div>
+       <div class="div4"></div>
+ 
+   </div>
+
+</body>
+</html>

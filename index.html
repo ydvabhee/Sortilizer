@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="top_bar">
+            <div class="logo">
+
+                <div class="logoAnimation">
+                    <div class="div1"></div>
+                    <div class="div2"></div>
+                    <div class="div3"></div>
+                    <div class="div4"></div>
+                </div>
+
+                SORT
+                <div class="hide">ING </div>
+                <div class="hide1">VISUA</div>
+                LIZER
+            </div>
+
+
+            <!-- <div class="counter">
+             <p >size of array : </p>
+             <input type="range" min="2" max="120" value="4" class="slider" id="myRange"/>
+             <div class="sorts" onclick="qs()"> <a href="#" class="href">Quick Sort</a></div>
+
+         </div> -->
+
+            <div class="topBarRight">
+
+                <!-- for speed button -->
+                <div class="dropdown">
+                    <button class="dropbtn">Speed </button>
+                    <div class="dropdown-content">
+                        <input type="range" min="0" max="300" value="50" class="slider" id="speedRange" />
+                    </div>
+                </div>
+
+                <!-- for size button  -->
+
+                <div class="dropdown">
+                    <button class="dropbtn">Size of Array</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="arrayAndDiv(20)">Short</a>
+                        <a href="#" onclick="arrayAndDiv(60)">Medium </a>
+                        <a href="#" onclick="arrayAndDiv(150)">Large </a>
+                        <a>Custom <br>
+
+                            <button class="counter" onclick="counterChange(-1)">-</i></button>
+                            <span class="counter" id="counterValue">4</span>
+                            <button class="counter" onclick="counterChange(1)">+</i></button> </a>
+                        </a>
+                    </div>
+                </div>
+
+                <button class="button" onclick="counterChange(0)">Reset</button>
+
+                <div class="custom-select" style="width:200px;">
+                    <select>
+                        <option id="selected_sort" value="0">Sorts</option>
+                        <option value="3">Bubble Sort</option>
+                        <option value="1">Quick Sort</option>
+                        <option value="2">Merge Sort</option>
+
+
+                    </select>
+                </div>
+
+
+                <button class="button" onclick="sort()">Sort</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <div id="value">100</div> -->
+    <script src="node.js"></script>
+</body>
+
+</html>
